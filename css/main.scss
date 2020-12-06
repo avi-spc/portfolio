@@ -117,3 +117,89 @@ section {
     line-height: 1.8em;
     font-weight: 500;
 }
+
+.skills {
+    background: #FF64CB;
+}
+
+.skills-container ul li {
+    background: white;
+    padding: 2em;
+    border-radius: 1em;
+    margin-bottom: 1em;
+
+    .icon-container {
+        height: 100px;
+        display: grid;
+        place-content: center;
+        margin: 0 auto;
+
+        &.one {
+            width: 100px;
+        }
+        &.two {
+            width: 100px;
+        }&.three {
+            width: 100px;
+        }
+    }
+
+    .skill-title {
+        font-weight: bold;
+    }
+
+    .featured-desc {
+        margin-bottom: 2em;
+    }
+}
+
+.portfolio {
+    background: #F7F7F7;
+}
+
+.portfolio-container a img {
+    border-radius: 1em;
+    margin-bottom: 2em;
+}
+
+@media only screen and (min-width: 800px) {
+    
+    .featured, .portfolio {
+        text-align: left;
+    }
+
+    .featured, .portfolio-container {
+        display: grid;
+        grid-template-columns: 40% auto;
+    }
+
+    .left, .portfolio-left {
+        display: grid;
+        place-content: center;
+    }
+
+    .right {
+        margin-left: 2em;
+        margin-top: 1em;
+    }
+
+    .skills {
+        margin-top: -5em;
+        margin-bottom: -7em;
+        padding-top: 7em;
+    }
+
+    .skills-container ul {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+    }
+
+    .portfolio {
+        padding-top: 7em;
+    }
+
+    .portfolio-container img {
+        margin-left: 2em;
+    }
+}
