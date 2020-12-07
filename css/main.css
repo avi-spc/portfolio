@@ -20,7 +20,7 @@ img {
 }
 
 .nav-container {
-  background: #6700EE;
+  background: #282726;
 }
 
 .nav-container a {
@@ -28,6 +28,7 @@ img {
 }
 
 header {
+  z-index: 10;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -57,7 +58,7 @@ header ul a {
 }
 
 .hero {
-  background: #6E00FF;
+  background: #282726;
   color: white;
   display: -ms-grid;
   display: grid;
@@ -127,7 +128,12 @@ section {
 }
 
 .skills {
-  background: #FF64CB;
+  background: #54504C;
+}
+
+.card {
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
 .skills-container ul li {
@@ -225,7 +231,7 @@ section {
     background: unset;
   }
   .nav-container header {
-    background: #6700EE;
+    background: #282726;
   }
   header {
     padding: 2em 2em 2em 4em;
@@ -256,7 +262,7 @@ section {
     padding: 0;
   }
   .hero .content {
-    background: #6700EE;
+    background: #282726;
     padding: 6em 8em 6em 4em;
     text-align: left;
   }
@@ -273,6 +279,7 @@ section {
     margin-top: 10%;
     width: 100%;
     border-radius: 50%;
+    z-index: 2;
   }
   .portfolio img {
     float: right;
@@ -310,6 +317,34 @@ section {
   }
   .hero .content {
     padding: 9em 20em 6em 20em;
+  }
+}
+
+.circle {
+  animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@-webkit-keyframes circleAnim {
+  from {
+    -webkit-transform: translate(181px, 381px);
+            transform: translate(181px, 381px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(181px, 417px);
+            transform: translate(181px, 417px);
+  }
+}
+
+@keyframes circleAnim {
+  from {
+    -webkit-transform: translate(181px, 381px);
+            transform: translate(181px, 381px);
+    z-index: 5;
+  }
+  to {
+    -webkit-transform: translate(181px, 417px);
+            transform: translate(181px, 417px);
   }
 }
 /*# sourceMappingURL=main.css.map */

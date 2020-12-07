@@ -21,7 +21,7 @@ img {
 }
 
 .nav-container {
-    background: #6700EE;
+    background: #282726;
 
     a {
         color: white;
@@ -29,6 +29,7 @@ img {
 }
 
 header {
+    z-index: 10;
     display: flex;
     justify-content: space-between;
     padding: 2em;
@@ -52,7 +53,7 @@ header {
 }
 
 .hero {
-    background: #6E00FF;
+    background: #282726;
     color: white;
     display: grid;
     text-align: center;
@@ -119,14 +120,18 @@ section {
 }
 
 .skills {
-    background: #FF64CB;
+    background: #54504C;
+}
+
+.card {
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
 
 .skills-container ul li {
     background: white;
     padding: 2em;
     border-radius: 1em;
-    margin-bottom: 1em;
+    margin-bottom: 1em;   
 
     .icon-container {
         height: 100px;
@@ -215,7 +220,7 @@ section {
         background: unset;
 
         header {
-            background: #6700EE;
+            background: #282726;
         }
     }
 
@@ -250,7 +255,7 @@ section {
         padding: 0;
 
         .content {
-            background: #6700EE;
+            background: #282726;
             padding: 6em 8em 6em 4em;
             text-align: left;
 
@@ -271,6 +276,7 @@ section {
         margin-top: 10%;
         width: 100%;
         border-radius: 50%;
+        z-index: 2;
     }
 
     .portfolio img {
@@ -314,5 +320,19 @@ section {
 
     .hero .content {       
         padding: 9em 20em 6em 20em;
+    }
+}
+
+.circle {
+    animation: circleAnim 1s infinite alternate-reverse;
+}
+
+@keyframes circleAnim {
+    from {
+        transform: translate(181px, 381px);
+        z-index: 5;
+    }
+    to {
+        transform: translate(181px, 417px);
     }
 }
