@@ -291,6 +291,9 @@ section {
     padding: 10em 10em 4em 10em;
   }
   .hero .content {
+    display: -ms-grid;
+    display: grid;
+    place-content: center;
     padding: 6em 8em 6em 10em;
   }
 }

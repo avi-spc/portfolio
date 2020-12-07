@@ -293,6 +293,8 @@ section {
     }
 
     .hero .content {
+        display: grid;
+        place-content: center;
         padding: 6em 8em 6em 10em;
     }
 }
@@ -310,7 +312,7 @@ section {
         padding: 6em 20em 4em 20em;
     }
 
-    .hero .content {
+    .hero .content {       
         padding: 9em 20em 6em 20em;
     }
 }
