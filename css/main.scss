@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     height: 100vh;
@@ -34,16 +37,12 @@ header {
     justify-content: space-between;
     padding: 2em;
 
-    .logo {
-        color: #00F7FF;
-    }
-
     ul {
         display: flex;
 
         a {
             display: block;
-            padding: 0 1em;
+            padding: .5em 1em 0 1em;
         }
     }
 }
@@ -63,9 +62,10 @@ header {
 .meet {
     display: flex;
     margin: 0 auto;
-    width: 200px;
+    width: 300px;
     font-weight: bold;
-    color: #FF64CB;
+    color: #86817C;
+    line-height: 1.2em;
 }
 
 .scroll {
@@ -268,6 +268,7 @@ section {
 
     .meet {
         margin: unset;
+        line-height: 1.2em;
     }
 
     .hero-design {
@@ -329,10 +330,10 @@ section {
 
 @keyframes circleAnim {
     from {
-        transform: translate(181px, 381px);
+        transform: translate(559px, 399px);
         z-index: 5;
     }
     to {
-        transform: translate(181px, 417px);
+        transform: translate(559px, 427px);
     }
 }

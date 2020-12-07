@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <g id="Logo" transform="translate(-465.911 -465.911)">
+    <g id="Ellipse_2" data-name="Ellipse 2" transform="translate(465.911 465.911)" fill="none" stroke="#fff" stroke-width="3">
+      <circle cx="24" cy="24" r="24" stroke="none"/>
+      <circle cx="24" cy="24" r="22.5" fill="none"/>
+    </g>
+    <g id="Ellipse_1" data-name="Ellipse 1" transform="translate(482.244 484.577)" fill="none" stroke="#fff" stroke-width="3">
+      <circle cx="4" cy="4" r="4" stroke="none"/>
+      <circle cx="4" cy="4" r="2.5" fill="none"/>
+    </g>
+    <line id="Line_1" data-name="Line 1" x2="11.238" y2="20.369" transform="translate(486.048 474.81)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_2" data-name="Line 2" x1="11.238" y2="20.369" transform="translate(474.81 474.81)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+    <line id="Line_3" data-name="Line 3" x1="11.238" y2="20.369" transform="translate(493.774 485.345)" fill="none" stroke="#fff" stroke-linecap="round" stroke-width="3"/>
+  </g>
+</svg>

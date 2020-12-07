@@ -1,12 +1,9 @@
-<svg class="scroll" width="26" height="64" viewBox="0 0 26 64">
-  <g id="Scroll" transform="translate(-175 -374)">
-    <g id="Rectangle" transform="translate(175 374)" fill="none" stroke="#fff" stroke-width="4">
-      <rect width="26" height="64" rx="13" stroke="none"/>
-      <rect x="2" y="2" width="22" height="60" rx="11" fill="none"/>
+<svg class="scroll" width="32" height="48" viewBox="0 0 32 48">
+  <g id="Scroll" transform="translate(-546 -392)">
+    <g id="Rectangle" transform="translate(546 392)" fill="none" stroke="#fff" stroke-width="3">
+      <rect width="32" height="48" rx="16" stroke="none"/>
+      <rect x="1.5" y="1.5" width="29" height="45" rx="14.5" fill="none"/>
     </g>
-    <g id="Ellipse" class="circle" transform="translate(181 381)" fill="#fff" stroke="#fff" stroke-width="4">
-      <circle cx="7" cy="7" r="7" stroke="none"/>
-      <circle cx="7" cy="7" r="5" fill="none"/>
-    </g>
+    <circle id="Ellipse" class="circle" cx="3" cy="3" r="3" transform="translate(559 427)" fill="#fff"/>
   </g>
 </svg>
