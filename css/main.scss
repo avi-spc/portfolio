@@ -126,6 +126,22 @@ section {
 .card {
     box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
 }
+
+.skillsandproject-container {   
+    .card ul {
+        justify-content: center;
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        grid-gap: 1em;
+
+        .skill-icons {
+            width: 2em;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
+
 .big-heading {
     text-transform: uppercase;
     font-size: 5em;
@@ -218,18 +234,31 @@ section {
             display: grid;
             grid-template-columns: repeat(3, auto);
             grid-gap: 1em;
-        }
+        }        
     }
 
     #skills {  
         .icon-container {
-            height: 100px;
+            height: 75px;
         }
       
         .skillsandproject-container ul {
             display: grid;
             grid-template-columns: repeat(4, auto);
             grid-gap: 1em;
+
+            .card ul {
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-gap: 1em;        
+
+                .skill-icons {
+                    width: 2em;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
         }
     }
 
@@ -277,7 +306,7 @@ section {
         ul {
             display: flex;
             justify-content: space-between;
-            width: 7em;
+            width: 8em;
             float: right;
 
             img {
