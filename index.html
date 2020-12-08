@@ -15,8 +15,8 @@
             <nav>
                 <ul>
                     <li><a href="#featured">About me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Skills</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
                     <li><a href="#portfolio">Contact</a></li>    
                 </ul>
             </nav>
@@ -24,9 +24,10 @@
 
         <div class="social-header">
             <ul>
-                <li><a href="#"><img src="images/behance.png" alt="behance"></a></li>
-                <li><a href="#"><img src="images/github.png" alt="github"></a></li>
-                <li><a href="#"><img src="images/instagram.png" alt="instagram"></a></li>
+                <li><a href="#" target="_blank"><img src="images/github.png" alt="github"></a></li>
+                <li><a href="#" target="_blank"><img src="images/behance.png" alt="behance"></a></li>
+                <li><a href="#" target="_blank"><img src="images/dribble.png" alt="dribble"></a></li>
+                <li><a href="https://avi-spc.itch.io/" target="_blank"><img src="images/itchio.svg" alt="itchio"></a></li>
             </ul>     
         </div>
     </div>
@@ -64,31 +65,70 @@
         <img class="right transition2" src="images/project-1.png" alt="Featured Project">
     </section>
 
-    <section class="skills">
-        <div class="skills-container">
+    <section id="skills" class="traitsandwork">
+        <div class="skillsandproject-container">
+            <h1 class="big-heading transition2">Skills</h1>
+            <ul>
+                <li class="card transition2">
+                    <div class="icon-container one">
+                        <img src="images/gameengine.svg" alt="UI/UX Icon">
+                    </div>
+                    <p class="card-title">Game Engine</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente! </p>
+                </li>
+                <li class="card transition2">
+                    <div class="icon-container two">
+                        <img src="images/multiplayerapi.svg" alt="UI/UX Icon">
+                    </div>
+                    <p class="card-title">Multiplayer API</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
+                </li>
+                <li class="card transition2">
+                    <div class="icon-container three">
+                        <img src="images/language.svg" alt="UI/UX Icon">
+                    </div>
+                    <p class="card-title">Language</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
+                </li>
+                <li class="card transition2">
+                    <div class="icon-container three">
+                        <img src="images/animation.svg" alt="UI/UX Icon">
+                    </div>
+                    <p class="card-title">Animation</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="traitsandwork">
+        <div class="skillsandproject-container" style="margin-top: 5em;">
+            <h1 class="big-heading transition2">Projects</h1>
             <ul>
                 <li class="card transition2">
                     <div class="icon-container one">
                         <img src="images/project-1.png" alt="UI/UX Icon">
                     </div>
-                    <p class="skill-title">UI/UX Design</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente! </p>
+                    <p class="card-title">UI/UX Design</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente! </p>
                 </li>
                 <li class="card transition2">
                     <div class="icon-container two">
                         <img src="images/project-1.png" alt="UI/UX Icon">
                     </div>
-                    <p class="skill-title">UI/UX Design</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
+                    <p class="card-title">UI/UX Design</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
                 </li>
                 <li class="card transition2">
                     <div class="icon-container three">
                         <img src="images/project-1.png" alt="UI/UX Icon">
                     </div>
-                    <p class="skill-title">UI/UX Design</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
+                    <p class="card-title">UI/UX Design</p>
+                    <p class="featured-desc card-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit, sapiente!</p>
                 </li>
             </ul>
+
+            <a href="" class="moreongit">more on github</a>
         </div>
     </section>
     <section id="portfolio" class="portfolio">
@@ -127,7 +167,17 @@
             ease: Expo.easeOut
         }, "-=2")
 
+
+
         tl.from('.stagger1', {
+            opacity: 0,
+            y: '-30%',
+            stagger: .3,
+            ease: Power4.easeOut,
+            duration: 1.5
+        }, "-=1")
+
+        tl.from('.moreongit', {
             opacity: 0,
             y: '-30%',
             stagger: .3,

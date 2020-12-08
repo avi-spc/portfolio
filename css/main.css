@@ -128,7 +128,7 @@ section {
   font-weight: 500;
 }
 
-.skills {
+.traitsandwork {
   background: #54504C;
 }
 
@@ -137,38 +137,55 @@ section {
           box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
 }
 
-.skills-container ul li {
+.big-heading {
+  text-transform: uppercase;
+  font-size: 5em;
+  color: #86817C;
+  margin: -.3em 0 -.5em 0;
+  padding: 0;
+  text-align: left;
+}
+
+.moreongit {
+  background: #282726;
+  color: white;
+  padding: .2em .6em;
+  border-radius: 1em;
+  -webkit-box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+          box-shadow: 0 5px 10px rgba(154, 160, 185, 0.05), 0 15px 40px rgba(166, 173, 201, 0.2);
+}
+
+.skillsandproject-container ul li {
   background: white;
   padding: 2em;
   border-radius: 1em;
   margin-bottom: 1em;
 }
 
-.skills-container ul li .icon-container {
-  height: 100px;
+.skillsandproject-container ul li .icon-container {
   display: -ms-grid;
   display: grid;
   place-content: center;
   margin: 0 auto;
 }
 
-.skills-container ul li .icon-container.one {
+.skillsandproject-container ul li .icon-container.one {
   width: 100px;
 }
 
-.skills-container ul li .icon-container.two {
+.skillsandproject-container ul li .icon-container.two {
   width: 100px;
 }
 
-.skills-container ul li .icon-container.three {
+.skillsandproject-container ul li .icon-container.three {
   width: 100px;
 }
 
-.skills-container ul li .skill-title {
+.skillsandproject-container ul li .card-title {
   font-weight: bold;
 }
 
-.skills-container ul li .featured-desc {
+.skillsandproject-container ul li .featured-desc {
   margin-bottom: 2em;
 }
 
@@ -200,16 +217,29 @@ section {
     margin-left: 2em;
     margin-top: 1em;
   }
-  .skills {
+  .traitsandwork {
     margin-top: -5em;
-    margin-bottom: -7em;
+    margin-bottom: -10em;
     padding-top: 7em;
   }
-  .skills-container ul {
+  #projects .icon-container {
+    height: 150px;
+  }
+  #projects .skillsandproject-container ul {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (auto)[3];
         grid-template-columns: repeat(3, auto);
+    grid-gap: 1em;
+  }
+  #skills .icon-container {
+    height: 100px;
+  }
+  #skills .skillsandproject-container ul {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
     grid-gap: 1em;
   }
   .portfolio {
@@ -217,6 +247,14 @@ section {
   }
   .portfolio-container img {
     margin-left: 2em;
+  }
+  .big-heading {
+    text-transform: uppercase;
+    font-size: 8em;
+    color: #86817C;
+    margin: -.3em 0 -.5em 0;
+    padding: 0;
+    text-align: left;
   }
 }
 
@@ -268,7 +306,7 @@ section {
     text-align: left;
   }
   .hero .content h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     line-height: 1.2em;
   }
   .meet {
@@ -287,6 +325,14 @@ section {
     float: right;
     max-width: 500px;
   }
+  .big-heading {
+    text-transform: uppercase;
+    font-size: 9em;
+    color: #86817C;
+    margin: -.3em 0 -.5em 0;
+    padding: 0;
+    text-align: left;
+  }
 }
 
 @media only screen and (min-width: 1250px) {
@@ -300,10 +346,16 @@ section {
     padding: 10em 10em 4em 10em;
   }
   .hero .content {
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
-    padding: 6em 8em 6em 10em;
+    padding: 8em 8em 6em 10em;
+  }
+  .big-heading {
+    text-transform: uppercase;
+    font-size: 10em;
+    color: #86817C;
+    position: relative;
+    margin: -.3em 0 -.5em 0;
+    padding: 0;
+    text-align: left;
   }
 }
 
