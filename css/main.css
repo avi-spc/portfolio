@@ -215,6 +215,33 @@ section {
   margin-bottom: 2em;
 }
 
+footer {
+  padding: 1em 1em 1em 1em;
+  background: #282726;
+  color: white;
+  font-size: .7em;
+  vertical-align: middle;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  list-style-type: none;
+}
+
+footer li {
+  margin: auto .2em;
+}
+
+footer img {
+  vertical-align: middle;
+  max-width: 32px;
+}
+
 @media only screen and (min-width: 800px) {
   .featured, .portfolio {
     text-align: left;
