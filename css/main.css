@@ -143,12 +143,18 @@ section {
           justify-content: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[3];
-      grid-template-columns: repeat(3, auto);
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 1em;
 }
 
 .skillsandproject-container .card ul .skill-icons {
+  width: 2em;
+  padding: 0;
+  margin: 0;
+}
+
+.skillsandproject-container .card ul .project-icons {
   width: 2em;
   padding: 0;
   margin: 0;
@@ -272,9 +278,24 @@ footer img {
   #projects .skillsandproject-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[3];
-        grid-template-columns: repeat(3, auto);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
     grid-gap: 1em;
+  }
+  #projects .skillsandproject-container ul .card ul {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[4];
+        grid-template-columns: repeat(4, auto);
+    grid-gap: 1em;
+  }
+  #projects .skillsandproject-container ul .card ul .project-icons {
+    width: 2em;
+    padding: 0;
+    margin: 0;
   }
   #skills .icon-container {
     height: 75px;
@@ -282,8 +303,8 @@ footer img {
   #skills .skillsandproject-container ul {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (auto)[4];
-        grid-template-columns: repeat(4, auto);
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
     grid-gap: 1em;
   }
   #skills .skillsandproject-container ul .card ul {

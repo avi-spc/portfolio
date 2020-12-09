@@ -1,0 +1,22 @@
+<svg id="microsoft" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="Group_13" data-name="Group 13" transform="translate(17)">
+    <g id="Group_12" data-name="Group 12">
+      <path id="Path_46" data-name="Path 46" d="M286,0H272V15h15V1A1,1,0,0,0,286,0Z" transform="translate(-272)" fill="#282726"/>
+    </g>
+  </g>
+  <g id="Group_15" data-name="Group 15">
+    <g id="Group_14" data-name="Group 14">
+      <path id="Path_47" data-name="Path 47" d="M1,0A1,1,0,0,0,0,1V15H15V0Z" fill="#282726"/>
+    </g>
+  </g>
+  <g id="Group_17" data-name="Group 17" transform="translate(0 17)">
+    <g id="Group_16" data-name="Group 16">
+      <path id="Path_48" data-name="Path 48" d="M0,272v14a1,1,0,0,0,1,1H15V272Z" transform="translate(0 -272)" fill="#282726"/>
+    </g>
+  </g>
+  <g id="Group_19" data-name="Group 19" transform="translate(17 17)">
+    <g id="Group_18" data-name="Group 18">
+      <path id="Path_49" data-name="Path 49" d="M272,272v15h14a1,1,0,0,0,1-1V272Z" transform="translate(-272 -272)" fill="#282726"/>
+    </g>
+  </g>
+</svg>

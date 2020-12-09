@@ -131,10 +131,16 @@ section {
     .card ul {
         justify-content: center;
         display: grid;
-        grid-template-columns: repeat(3, auto);
+        grid-template-columns: repeat(3, 1fr);
         grid-gap: 1em;
 
         .skill-icons {
+            width: 2em;
+            padding: 0;
+            margin: 0;
+        }
+
+        .project-icons {
             width: 2em;
             padding: 0;
             margin: 0;
@@ -255,8 +261,21 @@ footer {
 
         .skillsandproject-container ul {
             display: grid;
-            grid-template-columns: repeat(3, auto);
+            grid-template-columns: repeat(3, 1fr);
             grid-gap: 1em;
+
+            .card ul {
+                justify-content: center;
+                display: grid;
+                grid-template-columns: repeat(4, auto);
+                grid-gap: 1em;    
+
+                .project-icons {
+                    width: 2em;
+                    padding: 0;
+                    margin: 0;
+                }
+            }
         }        
     }
 
@@ -267,7 +286,7 @@ footer {
       
         .skillsandproject-container ul {
             display: grid;
-            grid-template-columns: repeat(4, auto);
+            grid-template-columns: repeat(4, 1fr);
             grid-gap: 1em;
 
             .card ul {
