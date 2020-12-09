@@ -115,7 +115,7 @@ section {
 .featured-title {
   color: black;
   font-weight: bold;
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin-top: -.4em;
   display: block;
 }
@@ -143,8 +143,8 @@ section {
           justify-content: center;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-columns: (auto)[3];
+      grid-template-columns: repeat(3, auto);
   grid-gap: 1em;
 }
 
